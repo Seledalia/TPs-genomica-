@@ -1,0 +1,7 @@
+name: test
+channels:
+  - bioconda
+dependencies:
+  - seqkit=2.13.0=he881be0_0
+
+prefix: "/home/codespace/.local/share/mamba/envs/test"
