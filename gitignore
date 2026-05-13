@@ -1,0 +1,53 @@
+# ============================================================
+# .gitignore — TP Ensamblaje Genómico
+# ============================================================
+
+# Lecturas de secuenciación (archivos pesados)
+reads/
+long_reads/*.fastq
+long_reads/*.fastq.gz
+
+# Caché de SRA
+sra_cache/
+
+# Archivos de datos descargados
+*.tar.gz
+*.fastq
+*.fastq.gz
+
+# Base de datos de BLAST (muy pesada, se descarga en el script)
+ref_viruses_rep_genomes*
+*.nhr
+*.nin
+*.nsq
+*.nsi
+*.nsd
+*.nog
+*.nos
+*.not
+*.ntf
+*.nto
+
+# Archivos de taxonomía
+taxdump*
+*.dmp
+names.dmp
+nodes.dmp
+delnodes.dmp
+merged.dmp
+gc.prt
+readme.txt
+
+# Archivos intermedios de BLAST
+blast.txt
+acc.list
+acc_taxid.tsv
+read_list
+
+# Binarios de micromamba
+bin/
+
+# Resultados opcionales (comentá estas líneas si querés subirlos)
+# resultados/
+# best_hits_per_contig.tsv
+# results.taxonomy
